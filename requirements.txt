@@ -1,0 +1,19 @@
+# Real-Time Speech Assistant — Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core AI APIs
+openai>=1.30.0
+elevenlabs>=1.0.0       # remove if using openai-only version
+
+# Audio recording & playback
+sounddevice>=0.4.6
+soundfile>=0.12.1
+numpy>=1.26.0
+
+# Environment config
+python-dotenv>=1.0.0
+
+# Note: pyaudio may be needed on some systems as a fallback
+# On macOS: brew install portaudio && pip install pyaudio
+# On Ubuntu: sudo apt-get install portaudio19-dev && pip install pyaudio
+# On Windows: pip install pyaudio (usually works directly)
